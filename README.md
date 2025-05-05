@@ -35,6 +35,18 @@ The solution is structured into several projects, each serving a specific purpos
 ### 6. **SharedContracts**
 - Contains shared models and enums used across the application, such as `Membership` and `ProductType`.
 
+### 7. **Unit Tests**
+
+This project includes unit tests to validate business rules and service logic. Tests are written using **NUnit** and utilize **Moq** for mocking dependencies.
+
+### Coverage Includes:
+- **PurchaseOrderServiceTests**:
+  - Validates that purchase orders for books, videos, and memberships are processed correctly.
+
+- **PurchaseOrderProcessorTests**:
+  - Verifies that appropriate rules (e.g., shipping, membership activation) are applied based on product types.
+  - Covers various combinations like book + membership, or all product types in a single order.
+
 ## Data Flow
 - Client submits a purchase order to the API endpoint
 - PurchaseOrderService validates and converts the DTO to a domain model
