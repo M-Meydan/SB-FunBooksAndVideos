@@ -1,7 +1,7 @@
 # SB-FunBooksAndVideos: Purchase Order Processor
 
 ## Overview
-The **FunBooksAndVideos Purchase Order Processor** is a microservice designed to handle purchase orders for an online store. It processes orders, applies business rules, and integrates with external services for membership activation and shipping slip generation. The service is built using ASP.NET Core and follows a clean architecture pattern.
+The **FunBooksAndVideos Purchase Order Processor** is a microservice designed to handle purchase orders for an online store. It processes purchase orders, applies business rules, and integrates with external services for membership activation and shipping slip generation. The service is built using ASP.NET and follows a Clean Architecture pattern.
 
 ## Key Features
 - **RESTful API**: The service exposes a RESTful API for processing purchase orders.
